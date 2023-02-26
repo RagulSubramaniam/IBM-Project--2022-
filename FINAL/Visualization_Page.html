@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: gray;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Visualization<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="vis1.html">1. Season with average production</a>
+      <a href="vis2.html">2. With year usage of area and production</a>
+      <a href="vis3.html">3. Top 10 State with most area</a>
+      <a href="vis4.html">4. State with crop production</a>
+      <a href="vis5.html">5. State with the crop production with season</a>
+    </div>
+  </div>
+  <a href="dash.html">Dashboard</a>
+  <a href="story.html">Story</a>
+  <a href="report.html">Report</a>
+  <a href="crop_production.csv">Dataset</a>
+  <a href="about.html">About us</a>
+
+    </div>
+</br></br></br></br></br></br></br>
+<div class="div1">
+    <center><h2>Estimate the crop yield production using Data Analytics</h2></center>
+</br></br>
+<center><img src="visuali.png" width="320px" height="155px"></center>
+</br>
+    
+</div>
+
+</body>
+</html>
